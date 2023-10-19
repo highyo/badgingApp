@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    position:  relative;
+    background-color: #B0E0E6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+ /* .container .company-name{ 
+    position: absolute; 
+    top: 5%;
+    margin-bottom: 55px;
+ }  */
+
+
+
+#employee{
+    border-collapse: collapse;
+
+}
+
+#employee td,#employee th{
+    border: 1px solid rgb(179, 168, 168);
+    padding: 5px 10px;
+}
+
+/* #employee th{
+    position: sticky;
+    top: 0;
+} */
+
+#employee tbody tr:nth-child(even){
+    background: #f0ffff;
+}
+
+.container-hist{
+    border: 1px solid  rgb(179, 168, 168);
+    padding: 5px 0 0;
+    border-radius: 0.5rem;
+    margin-top: 1px;
+}
+
+.container-hist .title{
+    margin-bottom: 15px;
+}
+
+.container-hist .filter:hover{
+    transition: all 0.3s ease;
+    color: #fff;
+}
+
+.container-hist .filter:active{
+    scale: 0.95;
+}
+
+#employee th{
+    background: #809b9b;
+}
+
+.btn-hystory{
+    margin-top: 30px;
+    /* width: 100%; */
+
+}
+
+.btn-hist{
+    padding: 9px 15px;
+    font-weight: 700;
+    border-radius: 10px;
+    font-size: 15px;
+    border: none;
+    background: #809b9b;
+    cursor: pointer;
+    width: 17rem;
+    transition: all 0.6s ease;
+}
+
+.btn-hist:hover{
+    letter-spacing: 0.3rem;
+    color: #f0ffff;
+    background: #656d6d;
+}
+
+.company-name{
+    position: relative;
+    animation: titlefloat 5s infinite;
+}
+
+
+@keyframes titlefloat {
+    0%{scale: 1;}
+    50%{scale: 0.5;}
+    100%{scale: 1;}
+}
+
+/* form pop up */
+.form-popup{
+    display: none;
+    position: fixed;
+    /* top: 200px; */
+    /*  */
+    top: 200px;
+    /* bottom: auto; */
+    /* left: 0;
+    right: 0; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /*  */
+    z-index: 2000;
+    text-align: center;
+    /* background: #f3f7f7; */
+    /* width: 100%; */
+    /* height: 100vh; */
+    /* box-shadow: 2px 2px 10px rgba(0, 0, 0, 10); */
+}
+
+.form-container{
+    max-width: 700px;
+    padding: 30px;
+    border-radius: 10px;
+    background: rgb(207, 245, 237);
+    display: flex;
+    flex-flow: column;
+    gap: 15px;
+    margin: auto;
+    /* align-items: center;
+    justify-content: center; */
+    box-shadow: 60px 20px 2200px rgb(10, 10, 10);
+}
+
+.form-container h1{
+    margin-bottom: 2px;
+}
+
+.form-container hr{
+    margin-bottom: 25px; 
+}
+
+.form-container .start-date,.form-container .end-date{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.form-container input[type=date]{
+    padding: 4px 8px;
+    margin: 0 5px;
+    width: 15rem;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+}
+
+.form-container input[type=date]:focus{
+    background: #f3f7f8;
+}
+
+.form-container .btn-popup{
+    border: none;
+    outline: none;
+    background: rgb(125, 131, 129);
+    padding: 5px 0;
+    border-radius: 1rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.5s ease;
+}
+
+.form-container .btn-popup:hover{
+    background: #B0E0E6;
+    letter-spacing: .2rem;
+}
+
+.form-container .closePopUp{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-weight: bolder;
+    background-color: #7c8788;
+    border-radius: 1rem;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.form-container .closePopUp:hover{
+    color: #8ee0eb;
+}

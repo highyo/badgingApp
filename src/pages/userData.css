@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    position:  relative;
+    background-color: #B0E0E6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container .container-list{
+    width: 80%;
+    margin: auto;
+}
+
+.container .container-list .title{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.employee-data{
+    width: 100%;
+    /* margin: auto; */
+    /* max-height: 200px;
+    overflow-y: scroll; */
+}
+
+/* .employee-data .head{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    gap: 35px;
+    background: #839294;
+} */
+
+.employee-data table{
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 2px 2px 11px rgba(0, 0, 0,0.9);
+    margin-top: 1rem;
+    /* text-align: center; */
+}
+
+.employee-data table td,.employee-data table th{
+    /* border: 1px solid #dddddd; */
+    text-align: center;
+}
+
+.employee-data table td{
+    padding: 4px 2px;
+}
+
+.employee-data table th{
+    padding: 10px 4px;
+    background: #34def5;
+    /*  */
+    /* position: sticky;
+    top: 0px; */
+
+}
+
+.employee-data .head{
+    padding: 5px 10px;
+}
+
+.employee-data table tbody tr:nth-child(even){
+    background: #cbf5f5;
+}
+
+.employee-data table tbody tr:hover{
+    background: #a7eff8;
+}
+
+.icons{
+    /* position: absolute; */
+    /* right: 10px; */
+    gap: 20px;
+    /* display: flex;
+    flex-flow: row;
+    align-items: center; */
+    /* text-align: center; */
+    padding: 0 3px;
+}
+
+.icons .icon{
+    cursor: pointer;
+    margin: 0 8px;
+}
+
+.flex{
+    /* text-align: center; */
+    width: 100%;
+    position: relative;
+    /* gap: 20px; */
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+
+.user-list .icons.th{
+    border: none;
+    /* text-align: left; */
+}
+
